@@ -1,0 +1,68 @@
+
+.heroSec{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.cardsSec{
+    /* background-color: burlywood; */
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    /* width: 90%; */
+    justify-content: center;
+    align-items: center;
+    /* padding:  0 auto; */
+}
+
+
+
+.mainCard{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: aquamarine;
+    /* max-height: 500px; */
+    width: 330px;
+    border:1px solid black  ;
+    border-radius: 10px;
+    margin-top: 20px;
+    margin-right: 20px;
+}
+
+.imageCard{
+    background-color:darkcyan;
+    height: 140px;
+    width: 320px;
+    border-radius: 10px;
+}
+
+.cardLeft{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.bottomCard{
+    display: flex;
+/* padding: 30px; */
+align-items: center;
+justify-content: space-evenly;
+width: 100%;
+}
+.cardButton{
+    background-color: #4CAF50; /* Green */
+    border: none;
+    border-radius: 20px;
+    color: white;
+    padding: 0 10px;
+    text-align: center;
+    /* text-decoration: none; */
+    /* display: inline-block; */
+    font-size: 16px;
+    height: 50px;
+    width: 120px;
+}

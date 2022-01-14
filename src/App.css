@@ -1,0 +1,12 @@
+/* *{
+    text-align: center;
+    background-color: black;
+    color: white;
+} */
+.loading{
+    /* display: flex; */
+    /* align-items: center; */
+    /* vertical-align: middle; */
+    size: 1000px;
+    color: red;
+}
