@@ -7,7 +7,6 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import { useState } from "react";
 
 const App = () => {
-
   const [category, setCategory] = useState("all");
   const [cartData, setCartData] = useState([]);
 
@@ -90,14 +89,26 @@ const App = () => {
   ];
   return (
     <BrowserRouter>
-        <Nav/>
-
+      <Nav />
       <Routes>
-        <Route path="/" element={<Home data={data} setCategory={setCategory}  category={category} cartData={cartData} setCartData={setCartData} />} />
-        <Route path="/about" element={<About/>} />
-        <Route path="/contact" element={<Contact/>} />
-        <Route path="/cart" element={<Cart  cartData={cartData} setCartData={setCartData}/>} />
-
+        <Route
+          path="/"
+          element={
+            <Home
+              data={data}
+              setCategory={setCategory}
+              category={category}
+              cartData={cartData}
+              setCartData={setCartData}
+            />
+          }
+        />
+        <Route path="/about" element={<About />} />
+        <Route path="/contact" element={<Contact />} />
+        <Route
+          path="/cart"
+          element={<Cart cartData={cartData} setCartData={setCartData} />}
+        />
       </Routes>
     </BrowserRouter>
   );
